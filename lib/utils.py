@@ -7,15 +7,12 @@ def link_points(points):
 
 def neighbour_estimation_function(theta):
     return (1 + theta) / (1 - theta)
-
-def sort(sortable, key):
-    return sorted(sortable, key=key)
     
 def max_l1_distance(data):
-    return sqrt((min(data[0]) - min(data[1]))**2 + (max(data[0]) - max(data[1]))**2)
+    return sqrt((min(data.iloc[:, 0]) - min(data.iloc[:, 1]))**2 + (max(data.iloc[:, 0]) - max(data.iloc[:, 1]))**2)
     
 def max_l2_distance(data):
-    return (abs(min(data[0]) - min(data[1])) + abs(max(data[0]) - max(data[1])))
+    return (abs(min(data.iloc[:, 0]) - min(data.iloc[:, 1])) + abs(max(data.iloc[:, 0]) - max(data.iloc[:, 1])))
 
 def l1_metric(p1, p2):
     return sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)

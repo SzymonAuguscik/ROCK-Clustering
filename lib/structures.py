@@ -1,13 +1,14 @@
 from functools import reduce
-from .utils import sort
 from heapq import heapify, heappush
 
 
 class Point:
     id = 0
-    def __init__(self, x, y):
+    def __init__(self, x, y, true_class):
         self.x = x
         self.y = y
+        self.true_class = true_class
+        self.predicted_class = -1
         self.id = Point.id
         Point.id += 1
 
@@ -83,7 +84,7 @@ class GlobalHeap:
         self.clusters[:] = (c for c in self.clusters if c != cluster)
 
     def update(self, local_heaps, key):
-        self.clusters = list(map(lambda heap: heap.cluster, sort(local_heaps, key)))
+        self.clusters = list(map(lambda heap: heap.cluster, sorted(local_heaps, key=key)))
 
     def insert(self, cluster, local_heaps, key):
         self.clusters.append(cluster)

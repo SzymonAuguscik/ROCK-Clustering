@@ -1,14 +1,20 @@
+import os
+
+from time import time
 from matplotlib import pyplot as plt
 from matplotlib import colors as mcolors
 from .structures import Point, Cluster, LocalHeap, GlobalHeap 
-from .utils import closeness_l1, max_l1_distance, neighbour_estimation_function, sort
+from .utils import closeness_l1, max_l1_distance, neighbour_estimation_function
+from sklearn.metrics import silhouette_score, silhouette_samples, rand_score
 
 
 class RockClustering:
-    def __init__(self, data, K, theta=0.5):
+    def __init__(self, data, K, filename, theta=0.5):
         self.data = data
         self.K = K
         self.theta = theta
+        self._set_up_file_paths(filename)
+        self.scores = {}
         self.points = None
         self.outliers = None
         self.neighbours = None
@@ -17,9 +23,22 @@ class RockClustering:
         self.local_heaps = None
         self.global_heap = None
 
+    def _set_up_file_paths(self, filename):
+        self.images_dir = os.path.join(os.path.dirname(filename), "images")
+        self.scores_dir = os.path.join(os.path.dirname(filename), "scores")
+        self.filename = os.path.splitext(os.path.basename(filename))[0]
+
+        if not os.path.exists(self.images_dir):
+            os.makedirs(self.images_dir)
+
+        if not os.path.exists(self.scores_dir):
+            os.makedirs(self.scores_dir)
+
     def _get_points(self):
-        x, y = self.data
-        return [Point(i, j) for i, j in zip(x, y)]
+        x = self.data.iloc[:, 0].to_list()
+        y = self.data.iloc[:, 1].to_list()
+        classes = self.data.iloc[:, 2].to_list()
+        return [Point(i, j, c) for i, j, c in zip(x, y, classes)]
 
     def _get_neighbours(self, sim, max_distance_func):
         max_distance = max_distance_func(self.data)
@@ -71,8 +90,8 @@ class RockClustering:
 
     def _create_global_heap(self):
         clusters = list(map(lambda heap: heap.cluster,
-                   sort(self.local_heaps,
-                        lambda heap: self._get_goodness_measure(heap.cluster, heap.get_max_linked_cluster()))))
+                   sorted(self.local_heaps,
+                          key=lambda heap: self._get_goodness_measure(heap.cluster, heap.get_max_linked_cluster()))))
         return GlobalHeap(clusters)
 
     def _get_local_heap_for_cluster(self, cluster):
@@ -86,21 +105,13 @@ class RockClustering:
     def _add_cluster(self, cluster):
         self.clusters.append(cluster)
 
-    def load_data(self):
-        pass
-
     def perform_clustering(self):
-        from time import time
         t1 = time()
         print("Start!")
         self.points = self._get_points()
         print("self.points")
         self.neighbours = self._get_neighbours(closeness_l1, max_l1_distance)
         self.outliers = self._extract_outliers()
-
-        for k in self.neighbours:
-            print(f"{k} = {len(self.neighbours[k])}")
-
         print("self.neighbours")
         self.links = self._compute_links()
         print("self.links")
@@ -148,32 +159,58 @@ class RockClustering:
             self.local_heaps.append(qw)
             self.Q.insert(w, self.local_heaps, update_clusters)
 
+        for i, cluster in enumerate(self.Q.clusters):
+            for point in cluster.points:
+                point.predicted_class = i
+
         t2 = time() - t1
-        print(f"Time: {t2} s")
-        print(f"Clustered points: {sum([len(c.points) for c in self.Q.clusters])}")
-        self.draw_points()
+        self.scores["time_in_seconds"] = round(t2, 3)
+        self.save_scores()
+        self.draw_clustered_points()
 
-    def print_results(self):
-        pass
+    def save_scores(self):
+        true_classes = [point.true_class for point in sorted(self.points + self.outliers,
+                                                             key=lambda p: p.id)]
+        predicted_classes = [point.predicted_class for point in sorted(self.points + self.outliers,
+                                                                       key=lambda p: p.id)]
 
-    def get_final_clusters(self):
-        pass
+        samples_silhouette_score = silhouette_samples(self.data.iloc[:, :-1], predicted_classes)
+        rand_index = rand_score(true_classes, predicted_classes)
+
+        self.scores["clustered_points_number"] = sum([len(c.points) for c in self.Q.clusters])
+        self.scores["clustering_silhouette_score"] = round(silhouette_score(self.data.iloc[:, :-1], predicted_classes), 3)
+        self.scores["samples_silhouette_min_score"] = round(min(samples_silhouette_score), 3)
+        self.scores["samples_silhouette_max_score"] = round(max(samples_silhouette_score), 3)
+        self.scores["rand_index"] = round(rand_index, 3)
+        
+        with open(f"{os.path.join(self.scores_dir, self.filename)}.json", 'w') as file:
+           file.write(str(self.scores))
 
     def draw_raw_points(self):
-        plt.scatter(*self.data)
+        plt.clf()
+        plt.scatter(self.data.iloc[:, 0].to_list(), self.data.iloc[:, 1].to_list())
+        plt.xlabel("x")
+        plt.ylabel("y")
+        plt.title("Samples")
+        plt.savefig(f"{os.path.join(self.images_dir, self.filename)}_samples")
 
         for source, neighbours in self.neighbours.items():
             for neighbour in neighbours:
                 plt.plot((source.x, neighbour.x), (source.y, neighbour.y), 'r')
 
-        plt.show()
+        plt.title("Neighbours")
+        plt.savefig(f"{os.path.join(self.images_dir, self.filename)}_neighbours")
 
-    def draw_points(self):
+    def draw_clustered_points(self):
+        plt.clf()
         colors = mcolors.TABLEAU_COLORS
 
         for cluster, color in zip(self.Q.clusters, colors):
             plt.scatter([point.x for point in cluster.points], [point.y for point in cluster.points], c=color)
 
         plt.scatter([outlier.x for outlier in self.outliers], [outlier.y for outlier in self.outliers], c='k')
-        plt.show()
+        plt.xlabel("x")
+        plt.ylabel("y")
+        plt.title("Clustered samples")
+        plt.savefig(f"{os.path.join(self.images_dir, self.filename)}_clusters")
 
