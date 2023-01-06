@@ -4,16 +4,26 @@ from time import time
 from matplotlib import pyplot as plt
 from matplotlib import colors as mcolors
 from .structures import Point, Cluster, LocalHeap, GlobalHeap 
-from .utils import closeness_l1, max_l1_distance, neighbour_estimation_function
+from .utils import neighbour_estimation_function_1, closeness_l1, max_l1_distance
 from sklearn.metrics import silhouette_score, silhouette_samples, rand_score
 
 
 class RockClustering:
-    def __init__(self, data, K, filename, theta=0.5):
+    def __init__(self,
+                 data,
+                 K,
+                 filename,
+                 theta=0.5,
+                 neighbour_estimation_function=neighbour_estimation_function_1,
+                 similarity_function=closeness_l1,
+                 max_distance_function=max_l1_distance):
         self.data = data
         self.K = K
-        self.theta = theta
         self._set_up_file_paths(filename)
+        self.theta = theta
+        self.neighbour_estimation_function = neighbour_estimation_function
+        self.similarity_function = similarity_function
+        self.max_distance_function = max_distance_function
         self.scores = {}
         self.points = None
         self.outliers = None
@@ -40,9 +50,9 @@ class RockClustering:
         classes = self.data.iloc[:, 2].to_list()
         return [Point(i, j, c) for i, j, c in zip(x, y, classes)]
 
-    def _get_neighbours(self, sim, max_distance_func):
-        max_distance = max_distance_func(self.data)
-        return {p1 : set([p2 for p2 in self.points if p2 != p1 and sim(p1, p2, max_distance) >= self.theta]) for p1 in self.points}
+    def _get_neighbours(self):
+        max_distance = self.max_distance_function(self.data)
+        return {p1 : set([p2 for p2 in self.points if p2 != p1 and self.similarity_function(p1, p2, max_distance) >= self.theta]) for p1 in self.points}
 
     def _extract_outliers(self):
         outliers = [point for point in self.points if len(self.neighbours[point]) == 0]
@@ -73,12 +83,12 @@ class RockClustering:
     def _get_clusters_link(self, cluster1, cluster2):
         return sum([self._get_points_link(p1, p2) for p1 in cluster1.points for p2 in cluster2.points])
 
-    def _get_goodness_measure(self, cluster1, cluster2, f=neighbour_estimation_function):
+    def _get_goodness_measure(self, cluster1, cluster2):
         if not (cluster1 and cluster2):
             return 0
 
         n1, n2 = len(cluster1.points), len(cluster2.points)
-        power = 1 + 2 * f(self.theta)
+        power = 1 + 2 * self.neighbour_estimation_function(self.theta)
         return self._get_clusters_link(cluster1, cluster2) / ((n1 + n2)**power - n1**power - n2**power)
         
     def _create_local_heap(self, cluster):
@@ -110,7 +120,7 @@ class RockClustering:
         print("Start!")
         self.points = self._get_points()
         print("self.points")
-        self.neighbours = self._get_neighbours(closeness_l1, max_l1_distance)
+        self.neighbours = self._get_neighbours()
         self.outliers = self._extract_outliers()
         print("self.neighbours")
         self.links = self._compute_links()
