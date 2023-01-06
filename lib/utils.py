@@ -5,7 +5,7 @@ from itertools import combinations
 def link_points(points):
     return list(combinations(points, 2))
 
-def neighbour_estimation_function(theta):
+def neighbour_estimation_function_1(theta):
     return (1 + theta) / (1 - theta)
     
 def max_l1_distance(data):
