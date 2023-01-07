@@ -1,0 +1,560 @@
+area_name,longitude,latitude,area_type,county_name,region
+Kawkhali,90.0592775,22.6261283,locality, Pirojpur,Barishal Division
+Mathbaria,89.9592718,22.2875917,locality, Pirojpur,Barishal Division
+Nazirpur,89.9608795,22.729367,locality, Pirojpur,Barishal Division
+Nesarabad,90.1014418,22.7473418,locality, Pirojpur,Barishal Division
+Pirojpur Sadar,89.9692183,22.5785847,locality, Pirojpur,Barishal Division
+Zianagar,89.9643591,22.4839617,locality, Pirojpur,Barishal Division
+Akhaura,91.2088835,23.8681221,locality, Brahmanbaria,Chattogram Division
+Ashuganj,91.0103122,24.0369033,county, Brahmanbaria,Chattogram Division
+Brahmanbaria Sadar,91.11228,23.97464,locality, Brahmanbaria,Chattogram Division
+Bancharampur,90.8058623,23.7782766,county, Brahmanbaria,Chattogram Division
+Bijoynagar,90.4117655,23.7331035,county, Brahmanbaria,Dhaka Division
+Kasba,91.145893,23.7467153,locality, Brahmanbaria,Chattogram Division
+Nabinagar,90.9699944,23.8846959,locality, Brahmanbaria,Chattogram Division
+Nasirnagar,91.1946433,24.1928465,locality, Brahmanbaria,Chattogram Division
+Sarail,91.1122605,24.074239,locality, Brahmanbaria,Chattogram Division
+Alikadam,92.3185873,21.6588358,locality, Bandarban,Chattogram Division
+Bandarban Sadar,92.2265364,22.1894207,locality, Bandarban,Chattogram Division
+Lama,92.2061826,21.7641844,venue, Bandarban,Chattogram Division
+Naikhongchhari,92.21946,22.19534,locality, Bandarban,Chattogram Division
+Rowangchari,92.3354471,22.1786191,locality, Bandarban,Chattogram Division
+Ruma,92.4092482,22.0492699,locality, Bandarban,Chattogram Division
+Thanchi,92.4309578,21.8226132,locality, Bandarban,Chattogram Division
+Chandpur Sadar,90.7111818,23.2252149,venue, Chandpur,Chattogram Division
+Faridganj,90.7547958,23.1282942,locality, Chandpur,Chattogram Division
+Haimchar,90.6627066,23.0958482,locality, Chandpur,Chattogram Division
+Hajiganj,90.8526116,23.2512936,locality, Chandpur,Chattogram Division
+Kachua,90.9500961,23.2253322,locality, Chandpur,Chattogram Division
+Matlab (Dakshin),90.65433,23.22714,locality, Chandpur,Chattogram Division
+Matlab (Uttar),90.7051919,23.3526113,locality, Chandpur,Chattogram Division
+Shahrasti,90.950342,23.2290335,locality, Chandpur,Chattogram Division
+Anwara,91.8723543,22.2331756,locality, Chittagong,Chattogram Division
+Banskhali,91.8901436,21.9749104,locality, Chittagong,Chattogram Division
+Boalkhali,91.9095044,22.3717421,locality, Chittagong,Chattogram Division
+Chandanish,91.5,22.91667,locality, Chittagong,Chattogram Division
+Fatikchari,91.8373695,22.846832,locality, Chittagong,Chattogram Division
+Karnaphuli,91.8196048,22.2714803,locality, Chittagong,Chattogram Division
+Lohagara,92.1079198,22.0442598,locality, Chittagong,Chattogram Division
+Mirsharai,91.5733311,22.7766865,locality, Chittagong,Chattogram Division
+Patiya,91.9776525,22.2990557,locality, Chittagong,Chattogram Division
+Rangunia,92.0562412,22.4693402,locality, Chittagong,Chattogram Division
+Raozan,91.9145292,22.5565841,locality, Chittagong,Chattogram Division
+Sandwip,91.4848147,22.4864684,locality, Chittagong,Chattogram Division
+Satkania,92.0576236,22.074247,locality, Chittagong,Chattogram Division
+Sitakunda,91.6586606,22.61804,locality, Chittagong,Chattogram Division
+Chakoria,92.0762874,21.7651864,venue, Cox'S Bazar,Chattogram Division
+Cox's Bazar Sadar,92.01528,21.58389,venue, Cox'S Bazar,Chattogram Division
+Kutubdia,91.8555338,21.8141916,locality, Cox'S Bazar,Chattogram Division
+Moheshkhali,91.9553658,21.5398485,venue, Cox'S Bazar,Chattogram Division
+Pekua,91.9648359,21.8124209,neighbourhood, Cox'S Bazar,Chattogram Division
+Ramu,92.0996282,21.4454899,venue, Cox'S Bazar,Chattogram Division
+Teknaf,92.298748,20.8684566,locality, Cox'S Bazar,Chattogram Division
+Ukhiya,92.1441529,21.2182492,locality, Cox'S Bazar,Chattogram Division
+Barura,91.0543359,23.3761885,locality, Cumilla,Chattogram Division
+Brahmanpara,91.1071379,23.6148455,locality, Cumilla,Chattogram Division
+Burichong,90.0,24.0,locality, Cumilla,
+Chandina,91.0078123,23.4883756,locality, Cumilla,Chattogram Division
+Chauddagram,91.3134925,23.224766,locality, Cumilla,Chattogram Division
+Cumilla Sadar,90.0,24.0,locality, Cumilla,
+Cumilla Sadar Daksin,90.0,24.0,locality, Cumilla,
+Daudkandi,90.7152458,23.5373475,locality, Cumilla,Chattogram Division
+Debidwar,90.9935327,23.5965294,locality, Cumilla,Chattogram Division
+Homna,90.7801036,23.6824661,locality, Cumilla,Chattogram Division
+Laksham,91.1520337,23.3558711,locality, Cumilla,Chattogram Division
+Lalmai,91.1477387,23.3590503,locality, Cumilla,Chattogram Division
+Meghna,90.6516405,23.5800565,locality, Cumilla,Dhaka Division
+Monohorganj,91.0579522,23.162281,locality, Cumilla,Chattogram Division
+Muradnagar,90.9265989,23.6410494,locality, Cumilla,Chattogram Division
+Nangalkot,91.1981807,23.1695939,locality, Cumilla,Chattogram Division
+Titas,91.1128143,23.9963768,locality, Cumilla,Chattogram Division
+Chhagalniya,91.31667,22.96667,locality, Feni,Chattogram Division
+Daganbhuiyan,91.3026932,22.9372022,locality, Feni,Chattogram Division
+Amtali,90.2311484,22.132863,locality, Barguna,Barishal Division
+Bamna,90.0938178,22.3088463,locality, Barguna,Barishal Division
+Barguna Sadar,90.117813,22.1590839,locality, Barguna,Barishal Division
+Betagi,90.1598377,22.4107982,locality, Barguna,Barishal Division
+Patharghata,89.9687065,22.0372853,locality, Barguna,Barishal Division
+Taltali,90.0731698,21.9375938,locality, Barguna,Barishal Division
+Agailjhara,90.1587931,22.9718503,locality, Barishal,Barishal Division
+Babuganj,90.312971,22.8332906,locality, Barishal,Barishal Division
+Bakerganj,90.3322187,22.5403205,locality, Barishal,Barishal Division
+Banaripara,90.159408,22.7834892,locality, Barishal,Barishal Division
+Barishal Sadar,90.3711417,22.7046314,locality, Barishal,Barishal Division
+Hizla,90.5591647,22.9599623,locality, Barishal,Barishal Division
+Mehendiganj,90.5275969,22.823263,locality, Barishal,Barishal Division
+Muladi,90.4108006,22.9132829,locality, Barishal,Barishal Division
+Uzirpur,90.2494433,22.8212949,locality, Barishal,Barishal Division
+Bhola-S,90.6405813,22.689095,locality, Bhola,Barishal Division
+Borhanuddin,90.7286893,22.4863364,locality, Bhola,Barishal Division
+Charfassion,90.7723049,22.4532472,locality, Bhola,Barishal Division
+Daulatkhan,90.7460114,22.6014346,locality, Bhola,Barishal Division
+Lalmohan,90.7334333,22.3410585,locality, Bhola,Barishal Division
+Monpura,90.9575136,22.2006954,locality, Bhola,Barishal Division
+Tazumuddin,90.8880721,22.452122,locality, Bhola,Barishal Division
+Jhalokathi Sadar,90.1990344,22.6426168,country, Jhalokathi,Barishal Division
+Kathalia,90.1228251,22.4019036,country, Jhalokathi,Barishal Division
+Nalchity,90.2703307,22.6347382,country, Jhalokathi,Barishal Division
+Rajapur,90.1435559,22.5704296,country, Jhalokathi,Barishal Division
+Bauphal,90.5589509,22.4168127,locality, Patuakhali,Barishal Division
+Dashmina,90.5622027,22.2832457,locality, Patuakhali,Barishal Division
+Dumki,90.3876818,22.460267,locality, Patuakhali,Barishal Division
+Galachipa,90.4106998,22.1252417,locality, Patuakhali,Barishal Division
+Kalapara,90.2232185,21.9860055,locality, Patuakhali,Barishal Division
+Mirzaganj,90.2209532,22.3552874,locality, Patuakhali,Barishal Division
+Patuakhali Sadar,90.3310543,22.3589664,locality, Patuakhali,Barishal Division
+Rangabali,90.3606949,21.6213967,locality, Patuakhali,Barishal Division
+Bhandaria,90.0643776,22.487683,locality, Pirojpur,Barishal Division
+Hathazari,91.8088601,22.5051095,locality, Chittagong,Chattogram Division
+Feni Sadar,91.31667,22.96667,locality, Feni,Chattogram Division
+Fulgazi,91.4326469,23.1554703,locality, Feni,Chattogram Division
+Porshuram,91.31667,22.96667,, Feni,Chattogram Division
+Sonagazi,91.4024581,22.8903051,locality, Feni,Chattogram Division
+Dighinala,92.0667283,23.2426457,county, Khagrachari,Chattogram Division
+Guimara,91.866344,22.9573218,county, Khagrachari,Chattogram Division
+Khagrachari Sadar,91.97007,23.10787,county, Khagrachari,Chattogram Division
+Laxmichari,91.97007,23.10787,county, Khagrachari,Chattogram Division
+Mahalchari,91.97007,23.10787,county, Khagrachari,Chattogram Division
+Manikchari,91.8371364,22.8473333,locality, Khagrachari,Chattogram Division
+Matiranga,91.8684916,23.0444506,locality, Khagrachari,Chattogram Division
+Panchari,91.8968907,23.2951052,locality, Khagrachari,Chattogram Division
+Ramgarh,91.7376614,22.9963081,locality, Khagrachari,Chattogram Division
+Komol Nagar,90.83333,22.91667,locality,  Laxmipur,Chattogram Division
+ Laxmipur Sadar,90.83333,22.91667,locality,  Laxmipur,Chattogram Division
+Raipur,90.83333,22.91667,locality,  Laxmipur,Chattogram Division
+Ramganj,90.83333,22.91667,locality,  Laxmipur,Chattogram Division
+Ramgati,90.83333,22.91667,locality,  Laxmipur,Chattogram Division
+Begumganj,91.0978056,22.9431118,locality, Noakhali,Chattogram Division
+Chatkhil,90.9723615,23.063094,locality, Noakhali,Chattogram Division
+Companiganj,91.2791324,22.8321363,locality, Noakhali,Chattogram Division
+Hatiya,91.1265769,22.2877297,locality, Noakhali,Chattogram Division
+Kabir Hat,91.2030085,22.837151,venue, Noakhali,Chattogram Division
+Noakhali Sadar,91.08945,22.81763,locality, Noakhali,Chattogram Division
+Senbag,91.2316209,23.0272334,county, Noakhali,Chattogram Division
+Sonaimuri,91.0977053,23.0350499,locality, Noakhali,Chattogram Division
+Subarna Char,91.08945,22.81763,locality, Noakhali,Chattogram Division
+Baghaichari,92.1948335,23.1678107,locality, Rangamati,Chattogram Division
+Barkal,92.3743385,22.7257708,locality, Rangamati,Chattogram Division
+Belaichari,92.19186,22.64317,locality, Rangamati,Chattogram Division
+Juraichari,92.3811092,22.6739081,locality, Rangamati,Chattogram Division
+Kaptai,92.2155989,22.5001158,locality, Rangamati,Chattogram Division
+Kaukhali,92.0361334,22.6274266,locality, Rangamati,Chattogram Division
+Langadu,92.1984214,22.9729867,locality, Rangamati,Chattogram Division
+Nanniarchar,92.19186,22.64317,locality, Rangamati,Chattogram Division
+Rajosthali,92.19186,22.64317,locality, Rangamati,Chattogram Division
+Rangamati Sadar,92.19186,22.64317,locality, Rangamati,Chattogram Division
+Dhamrai,90.2142069,23.9183476,locality, Dhaka,Dhaka Division
+Dohar,90.1208791,23.6174015,locality, Dhaka,Dhaka Division
+Keraniganj,90.3826441,23.7005013,locality, Dhaka,Dhaka Division
+Nawabganj,90.1604757,23.6605166,locality, Dhaka,Dhaka Division
+Savar,90.2587,23.8477,locality, Dhaka,Dhaka Division
+Alfadanga,89.7038992,23.2915449,locality, Faridpur,Dhaka Division
+Bhanga,89.98028,23.3848982,locality, Faridpur,Dhaka Division
+Boalmari,89.681615,23.3854562,locality, Faridpur,Dhaka Division
+Charbhadrasan,89.9929789,23.5644295,town, Faridpur,Dhaka Division
+Faridpur Sadar,89.809185,23.5896818,locality, Faridpur,Dhaka Division
+Madhukhali,89.6255061,23.5434411,locality, Faridpur,Dhaka Division
+Nagarkanda,89.8902054,23.4170245,locality, Faridpur,Dhaka Division
+Sadarpur,90.0251427,23.4708388,locality, Faridpur,Dhaka Division
+Saltha,90.16667,23.41667,locality, Faridpur,Dhaka Division
+Gazipur Sadar,90.4197487,23.9999521,county, Gazipur,Dhaka Division
+Kaliakoir,90.2099253,24.0765991,county, Gazipur,Dhaka Division
+Kaligonj,90.5665145,23.9197847,county, Gazipur,Dhaka Division
+Kapasia,90.4025647,24.096839,locality, Gazipur,Dhaka Division
+Sreepur,90.478198,24.1988756,county, Gazipur,Dhaka Division
+Kasiani,89.83278,23.01018,locality, Gopalganj,Dhaka Division
+Kotalipara,90.000354,22.9920084,locality, Gopalganj,Dhaka Division
+Muksudpur,89.8696769,23.3146905,locality, Gopalganj,Dhaka Division
+Tungipara,89.8990776,22.9053736,locality, Gopalganj,Dhaka Division
+Austagram,91.104981,24.2743376,locality, Kishoreganj,Dhaka Division
+Bajitpur,90.9518114,24.2157623,locality, Kishoreganj,Dhaka Division
+Bhairab,90.9800203,24.056768,locality, Kishoreganj,Dhaka Division
+Hossainpur,90.6553734,24.4168657,locality, Kishoreganj,Dhaka Division
+Itna,91.1122564,24.5345969,locality, Kishoreganj,Dhaka Division
+Karimganj,90.8690233,24.4651227,locality, Kishoreganj,Dhaka Division
+Katiadi,90.7962218,24.2502962,locality, Kishoreganj,Dhaka Division
+Kishoreganj Sadar,90.78291,24.43944,locality, Kishoreganj,Dhaka Division
+Kuliarchar,90.9322312,24.1515066,locality, Kishoreganj,Dhaka Division
+Mithamoin,91.0602879,24.4149439,locality, Kishoreganj,Dhaka Division
+Nikli,90.9374993,24.3303482,locality, Kishoreganj,Dhaka Division
+Pakundia,90.6805614,24.3287538,locality, Kishoreganj,Dhaka Division
+Tarail,90.8912914,24.54923,locality, Kishoreganj,Dhaka Division
+Kalkini,90.2217374,23.0781315,locality, Madaripur,Dhaka Division
+Madaripur Sadar,90.2117735,23.1654132,locality, Madaripur,Dhaka Division
+Rajoir,90.047407,23.2095025,locality, Madaripur,Dhaka Division
+Shibchar,90.1697226,23.34728,locality, Madaripur,Dhaka Division
+Daulatpur,89.833754,23.9686822,locality, Manikganj,Dhaka Division
+Ghior,89.8719708,23.8995885,locality, Manikganj,Dhaka Division
+Harirampur,89.9776541,23.752789,locality, Manikganj,Dhaka Division
+Manikganj Sadar,89.9986742,23.8706167,locality, Manikganj,Dhaka Division
+Saturia,90.0371913,23.9714343,locality, Manikganj,Dhaka Division
+Shivalaya,89.7867127,23.8367476,locality, Manikganj,Dhaka Division
+Singair,90.53459,23.5517,locality, Munshiganj,Dhaka Division
+Gazaria,90.6523837,23.5576927,locality, Munshiganj,Dhaka Division
+Lauhajong,90.53459,23.5517,locality, Munshiganj,Dhaka Division
+Munshiganj Sadar,90.5329919,23.5475883,locality, Munshiganj,Dhaka Division
+Sirajdikhan,90.3802202,23.5729062,county, Munshiganj,Dhaka Division
+Sreenagar,90.2920935,23.5436923,county, Munshiganj,Dhaka Division
+Tongibari,90.4659685,23.5102866,locality, Munshiganj,Dhaka Division
+Araihazar,90.50298,23.61352,locality, Narayanganj,Dhaka Division
+Bandar,90.5460281,23.6903225,neighbourhood, Narayanganj,Dhaka Division
+Narayanganj Sadar,90.5027019,23.6199174,venue, Narayanganj,Dhaka Division
+Rupganj,90.50298,23.61352,locality, Narayanganj,Dhaka Division
+Sonargaon,90.5928322,23.6112598,locality, Narayanganj,Dhaka Division
+Belabo,90.0,24.0,county, Narshingdi,
+Monohardi,90.0,24.0,county, Narshingdi,
+Narshingdi Sadar,90.0,24.0,county, Narshingdi,
+Palash,90.0,24.0,county, Narshingdi,
+Raipura,90.0,24.0,county, Narshingdi,
+Shibpur,90.0,24.0,county, Narshingdi,
+Baliakandi,89.5484979,23.6351881,locality, Rajbari,Dhaka Division
+Goalanda,89.7589328,23.7200316,locality, Rajbari,Dhaka Division
+Kalukhali,89.4804096,23.7681463,locality, Rajbari,Dhaka Division
+Pangsha,89.4166377,23.7874278,locality, Rajbari,Dhaka Division
+Rajbari Sadar,89.55,23.66667,locality, Rajbari,Dhaka Division
+Bhedarganj,90.4454058,23.1967596,county, Shariatpur,Dhaka Division
+Damuddya,90.35,23.21,locality, Shariatpur,Dhaka Division
+Goshairhat,90.4521279,23.0987046,county, Shariatpur,Dhaka Division
+Janjira,90.35,23.21,locality, Shariatpur,Dhaka Division
+Naria,90.3526478,23.2363276,locality, Shariatpur,Dhaka Division
+Shariatpur Sadar,90.35,23.21,locality, Shariatpur,Dhaka Division
+Basail,90.0517494,24.2297459,locality, Tangail,Dhaka Division
+Bhuapur,89.872814,24.4612546,locality, Tangail,Dhaka Division
+Delduar,89.9683401,24.169158,locality, Tangail,Dhaka Division
+Dhanbari,89.951882,24.6774082,locality, Tangail,Dhaka Division
+Ghatail,89.9735137,24.4781769,locality, Tangail,Dhaka Division
+Gopalpur,89.9282608,24.5638001,locality, Tangail,Dhaka Division
+Kalihati,89.9948451,24.3873346,locality, Tangail,Dhaka Division
+Madhupur,90.0289157,24.6071629,locality, Tangail,Dhaka Division
+Mirzapur,90.097894,24.1042894,locality, Tangail,Dhaka Division
+Nagarpur,89.8739848,24.0532552,locality, Tangail,Dhaka Division
+Shakhipur,90.170991,24.3193763,locality, Tangail,Dhaka Division
+Tangail Sadar,89.9148594,24.2512885,locality, Tangail,Dhaka Division
+Bagerhat Sadar,89.7941813,22.6554781,locality, Bagerhat,Khulna Division
+Chitalmari,89.7708204,22.6751248,locality, Bagerhat,Khulna Division
+Fakirhat,89.711726,22.7751423,locality, Bagerhat,Khulna Division
+Kachua,89.897238,22.5991038,locality, Bagerhat,Khulna Division
+Mollahat,89.75,22.4,locality, Bagerhat,Khulna Division
+Mongla,89.6416417,22.6585602,locality, Bagerhat,Khulna Division
+Morrelganj,89.75,22.4,locality, Bagerhat,Khulna Division
+Rampal,89.75,22.4,locality, Bagerhat,Khulna Division
+Sharankhola,89.8409852,22.3104755,locality, Bagerhat,Khulna Division
+Alamdanga,88.9447428,23.7656496,locality, Chuadanga,Khulna Division
+Chuadanga Sadar,88.85291,23.64299,locality, Chuadanga,
+Damurhuda,88.7627066,23.6142025,locality, Chuadanga,Khulna Division
+Jibannagar,88.8213015,23.4224068,locality, Chuadanga,Khulna Division
+Abhoynagar,90.0,24.0,country, Jashore,
+Bagherpara,90.0,24.0,locality, Jashore,
+Chowgacha,89.2095143,23.1665971,country, Jashore,Khulna Division
+Jashore Sadar,90.0,24.0,, Jashore,
+Jhikargacha,89.100577,23.1017711,locality, Jashore,Khulna Division
+Keshabpur,90.0,24.0,locality, Jashore,
+Monirampur,90.0,24.0,locality, Jashore,
+Sarsha,90.0,24.0,locality, Jashore,
+Harinakunda,89.16667,23.5,county, Jhenaidah,Khulna Division
+Jhenaidah Sadar,89.1722211,23.5300032,county, Jhenaidah,Khulna Division
+Kaliganj,89.1359615,23.4079255,county, Jhenaidah,Khulna Division
+Kotchandpur,89.0054199,23.411486,county, Jhenaidah,Khulna Division
+Moheshpur,88.9165637,23.3572255,county, Jhenaidah,Khulna Division
+Shailkupa,89.2540681,23.6883293,locality, Jhenaidah,Khulna Division
+Batiaghata,89.5180285,22.7403468,locality, Khulna,Khulna Division
+Dacope,89.5095633,22.5531476,locality, Khulna,Khulna Division
+Dighalia,89.6450042,23.121614,locality, Khulna,Khulna Division
+Dumuria,89.417734,22.8063328,locality, Khulna,Khulna Division
+Koira,89.25,22.91667,venue, Khulna,Khulna Division
+Paikgacha,89.3189657,22.5893528,locality, Khulna,Khulna Division
+Phultala,89.4745659,22.9735528,locality, Khulna,Khulna Division
+Rupsa,89.7907734,22.6581303,locality, Khulna,Khulna Division
+Terokhada,89.6683048,22.9402163,locality, Khulna,Khulna Division
+Bheramara,88.9971604,24.0202276,locality, Kushtia,Khulna Division
+Daulatpur,88.8731064,24.0006974,locality, Kushtia,Khulna Division
+Khoksha,89.2835547,23.8063883,locality, Kushtia,Khulna Division
+Kumarkhali,89.2413168,23.8615887,locality, Kushtia,Khulna Division
+Kushtia Sadar,88.91667,23.83333,locality, Kushtia,Khulna Division
+Mirpur,88.997764,23.9363038,locality, Kushtia,Khulna Division
+Magura Sadar,89.4198397,23.48551,locality, Magura,Khulna Division
+Mohammadpur,89.5974634,23.4003334,locality, Magura,Khulna Division
+Salikha,89.3704896,23.3764856,locality, Magura,Khulna Division
+Sreepur,90.4798278,24.1997731,county, Magura,Dhaka Division
+Gangni,88.7497084,23.8178712,locality, Meherpur,Khulna Division
+Meherpur Sadar,88.7,23.75,locality, Meherpur,Khulna Division
+Mujibnagar,88.594788,23.6475127,locality, Meherpur,Khulna Division
+Kalia,89.6305234,23.044864,locality, Narail,Khulna Division
+Lohagara,89.5844999,23.1830738,locality, Narail,Khulna Division
+Narail Sadar,89.4984249,23.1839237,locality, Narail,Khulna Division
+Assasuni,89.1131574,22.6623278,locality, Satkhira,Khulna Division
+Debhata,88.9972122,22.6137042,locality, Satkhira,Khulna Division
+Kalaroa,89.0359397,22.8605568,locality, Satkhira,Khulna Division
+Kaliganj,89.0712972,22.7224231,locality, Satkhira,Khulna Division
+Satkhira Sadar,89.15,22.35,locality, Satkhira,Khulna Division
+Shyamnagar,89.15,22.35,locality, Satkhira,Khulna Division
+Tala,89.2749661,22.7796647,locality, Satkhira,Khulna Division
+Bakshiganj,89.8693551,25.1844367,locality, Jamalpur,Mymensingh Division
+Dewanganj,89.94812,24.91965,locality, Jamalpur,Dhaka Division
+Islampur,89.7898563,25.0811289,locality, Jamalpur,Mymensingh Division
+Jamalpur Sadar,89.94812,24.91965,locality, Jamalpur,Dhaka Division
+Madarganj,89.9009192,24.9182648,locality, Jamalpur,Mymensingh Division
+Melendah,89.94812,24.91965,, Jamalpur,Dhaka Division
+Sarishabari,89.8331666,24.7499467,locality, Jamalpur,Mymensingh Division
+Bhaluka,90.3863536,24.404455,locality, Mymensingh,Mymensingh Division
+Dhobaura,90.520693,25.0899734,locality, Mymensingh,Mymensingh Division
+Fulbaria,90.3559291,24.7219523,locality, Mymensingh,Mymensingh Division
+Gaffargaon,90.40646,24.75636,locality, Mymensingh,Dhaka Division
+Gouripur,90.5703878,24.7600679,locality, Mymensingh,Mymensingh Division
+Haluaghat,90.3395618,25.1222567,locality, Mymensingh,Mymensingh Division
+Ishwarganj,90.5965483,24.6888987,locality, Mymensingh,Mymensingh Division
+Muktagacha,90.2583669,24.7651553,locality, Mymensingh,Mymensingh Division
+Mymensingh Sadar,90.40646,24.75636,locality, Mymensingh,Dhaka Division
+Nandail,90.6866685,24.5703293,locality, Mymensingh,Mymensingh Division
+Phulpur,90.3588311,24.9524549,locality, Mymensingh,Mymensingh Division
+Tarakanda,90.4263942,24.8628841,locality, Mymensingh,Mymensingh Division
+Trishal,90.3951768,24.5823196,locality, Mymensingh,Mymensingh Division
+Atpara,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Barhatta,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Durgapur,90.7398853,24.8981752,locality, Netrakona,Mymensingh Division
+Kalmakanda,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Kendua,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Khaliajuri,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Madan,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Mohanganj,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Netrakona Sadar,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Purbadhala,90.72898,24.88352,locality, Netrakona,Dhaka Division
+Jhenaigati,90.01751,25.01881,locality, Sherpur,Dhaka Division
+Nakla,90.1833248,24.9692199,locality, Sherpur,Mymensingh Division
+Nalitabari,90.194301,25.0896639,locality, Sherpur,Mymensingh Division
+Sherpur Sadar,90.01751,25.01881,locality, Sherpur,Dhaka Division
+Sreebordi,90.01751,25.01881,, Sherpur,Dhaka Division
+Adamdighi,89.0440428,24.8191808,locality, Bogura,Rajshahi Division
+Bogura Sadar,89.3726468,24.8502083,locality, Bogura,Rajshahi Division
+Dhunot,89.420371,24.662636,locality, Bogura,Rajshahi Division
+Dhupchancia,90.0,24.0,locality, Bogura,
+Gabtali,89.4512705,24.8770229,locality, Bogura,Rajshahi Division
+Kahaloo,89.2283881,24.8375694,locality, Bogura,Rajshahi Division
+Nandigram,89.2708646,24.6573747,locality, Bogura,Rajshahi Division
+Sariakandi,89.5665748,24.8912471,locality, Bogura,Rajshahi Division
+Shajahanpur,89.3946329,24.7761498,locality, Bogura,Rajshahi Division
+Sherpur,89.4202556,24.6648673,locality, Bogura,Rajshahi Division
+Shibganj,89.359789,25.0140345,locality, Bogura,Rajshahi Division
+Sonatala,89.4976649,25.0439508,locality, Bogura,Rajshahi Division
+Bholahat,90.0,24.0,locality, Chapainawabganj,
+Gomostapur,90.0,24.0,, Chapainawabganj,
+Nachol,90.0,24.0,venue, Chapainawabganj,
+Nawabganj Sadar,90.0,24.0,locality, Chapainawabganj,
+Shibganj,88.1574317,24.6858682,locality, Chapainawabganj,Rajshahi Division
+Akkelpur,89.0169358,24.9667025,locality, Joypurhat,Rajshahi Division
+Joypurhat Sadar,89.02286,25.09446,locality, Joypurhat,Rajshahi Division
+Kalai,89.1659505,25.0615044,locality, Joypurhat,Rajshahi Division
+Khetlal,89.2248585,24.9756809,locality, Joypurhat,Rajshahi Division
+Panchbibi,89.0196664,25.1872769,locality, Joypurhat,Rajshahi Division
+Atrai,89.0956889,24.5322937,county, Naogaon,Rajshahi Division
+Badalgachi,88.7624873,25.0400696,locality, Naogaon,Rajshahi Division
+Dhamoirhat,88.832894,25.1559873,locality, Naogaon,Rajshahi Division
+Manda,88.7479115,24.8040425,locality, Naogaon,Rajshahi Division
+Mohadevpur,88.7494255,24.9167415,locality, Naogaon,Rajshahi Division
+Naogaon Sadar,88.9372822,24.8223534,locality, Naogaon,Rajshahi Division
+Niamatpur,88.5785015,24.8260148,locality, Naogaon,Rajshahi Division
+Patnitala,88.806029,25.0911902,locality, Naogaon,Rajshahi Division
+Porsha,88.4517209,25.0237937,locality, Naogaon,Rajshahi Division
+Raninagar,88.9660795,24.7358995,locality, Naogaon,Rajshahi Division
+Sapahar,88.94657,24.8118,locality, Naogaon,Rajshahi Division
+Bagatipara,88.9521547,24.3694334,locality, Natore,Rajshahi Division
+Baraigram,89.1511254,24.3169873,locality, Natore,Rajshahi Division
+Gurudaspur,89.2325129,24.3679529,locality, Natore,Rajshahi Division
+Lalpur,88.9565006,24.1824622,locality, Natore,Rajshahi Division
+Naldanga,89.08333,24.35,locality, Natore,Rajshahi Division
+Natore Sadar,89.008877,24.2897439,locality, Natore,Rajshahi Division
+Singra,89.1452444,24.5046953,locality, Natore,Rajshahi Division
+Atghoria,89.2432377,24.1143707,locality, Pabna,Rajshahi Division
+Bera,89.6103537,24.0779947,locality, Pabna,Rajshahi Division
+Bhangura,89.3786772,24.2169449,locality, Pabna,Rajshahi Division
+Chatmohar,89.290206,24.2313834,locality, Pabna,Rajshahi Division
+Faridpur,89.4427491,24.1606327,locality, Pabna,Rajshahi Division
+Ishwardi,89.0671024,24.1287022,venue, Pabna,Rajshahi Division
+Pabna Sadar,89.2495065,24.0054508,locality, Pabna,Rajshahi Division
+Santhia,89.2372,24.00644,locality, Pabna,Rajshahi Division
+Sujanagar,89.4071557,23.9422194,locality, Pabna,Rajshahi Division
+Bagha,88.8360859,24.1919058,locality, Rajshahi,Rajshahi Division
+Bagmara,88.8223481,24.5833398,locality, Rajshahi,Rajshahi Division
+Charghat,88.7469909,24.2850601,locality, Rajshahi,Rajshahi Division
+Durgapur,89.2156529,24.7999394,locality, Rajshahi,Rajshahi Division
+Godagari,88.3285448,24.4581726,locality, Rajshahi,Rajshahi Division
+Mohanpur,88.6475568,24.5474589,locality, Rajshahi,Rajshahi Division
+Paba,88.6125766,24.4583004,locality, Rajshahi,Rajshahi Division
+Puthia,88.8421421,24.3693187,locality, Rajshahi,Rajshahi Division
+Tanore,88.576128,24.5891475,locality, Rajshahi,Rajshahi Division
+Belkuchi,89.696472,24.2931385,locality, Sirajganj,Rajshahi Division
+Chowhali,89.70802,24.45771,, Sirajganj,Rajshahi Division
+Kamarkhanda,89.70802,24.45771,locality, Sirajganj,Rajshahi Division
+Kazipur,89.6419389,24.6479487,locality, Sirajganj,Rajshahi Division
+Raiganj,89.5272173,24.5065261,locality, Sirajganj,Rajshahi Division
+Shahzadpur,89.594514,24.1837384,locality, Sirajganj,Rajshahi Division
+Sirajganj Sadar,89.70802,24.45771,locality, Sirajganj,Rajshahi Division
+Tarash,89.3753368,24.4331557,locality, Sirajganj,Rajshahi Division
+Ullapara,89.5696836,24.3133121,locality, Sirajganj,Rajshahi Division
+Birampur,88.991278,25.3905537,locality, Dinajpur,Rangpur Division
+Birganj,88.6532342,25.8623371,locality, Dinajpur,Rangpur Division
+Birol,88.5466158,25.6363575,venue, Dinajpur,Rangpur Division
+Bochaganj,88.46708,25.7997368,locality, Dinajpur,Rangpur Division
+Chirirbandar,88.7758409,25.6458795,locality, Dinajpur,Rangpur Division
+Dinajpur Sadar,88.632424,25.6249608,locality, Dinajpur,Rangpur Division
+Fulbari,88.968885,25.4954304,locality, Dinajpur,Rangpur Division
+Ghoraghat,89.2599561,25.2660298,locality, Dinajpur,Rangpur Division
+Hakimpur,89.0124068,25.2866264,locality, Dinajpur,Rangpur Division
+Kaharol,88.673315,25.7553705,locality, Dinajpur,Rangpur Division
+Khanshama,88.7331981,25.9226607,town, Dinajpur,Rangpur Division
+Nawabganj,88.9998199,25.3961157,locality, Dinajpur,Rangpur Division
+Parbatipur,88.9163662,25.6575053,locality, Dinajpur,Rangpur Division
+Fulchari,89.5438,25.3293,locality, Gaibandha,Rangpur Division
+Gaibandha Sadar,89.5438,25.3293,locality, Gaibandha,Rangpur Division
+Gobindaganj,89.3857832,25.1339117,locality, Gaibandha,Rangpur Division
+Palashbari,89.3504299,25.2874005,venue, Gaibandha,Rangpur Division
+Sadullapur,89.4332977,25.401083,locality, Gaibandha,Rangpur Division
+Saghata,89.5438,25.3293,locality, Gaibandha,Rangpur Division
+Sundarganj,89.5227662,25.5669663,locality, Gaibandha,Rangpur Division
+Bhurungamari,89.6638474,26.1104617,locality, Kurigram,Rangpur Division
+Chilmari,89.6622435,25.5850605,locality, Kurigram,Rangpur Division
+Fulbari,89.8492992,25.5395522,locality, Kurigram,Rangpur Division
+Kurigram Sadar,89.6144683,25.8112019,venue, Kurigram,Rangpur Division
+Nageswari,89.6895087,25.9647602,county, Kurigram,Rangpur Division
+Rajarhat,89.5446589,25.7967438,county, Kurigram,Rangpur Division
+Char Rajibpur,89.765778,25.3646528,locality, Kurigram,Rangpur Division
+Rowmari,89.8348269,25.576821,locality, Kurigram,Rangpur Division
+Ulipur,89.6191027,25.6558768,locality, Kurigram,Rangpur Division
+Aditmari,89.350972,25.9222534,locality, Lalmonirhat,Rangpur Division
+Hatibandha,89.1424957,26.1230452,locality, Lalmonirhat,Rangpur Division
+Kaliganj,89.2082255,25.9678732,locality, Lalmonirhat,Rangpur Division
+Lalmonirhat Sadar,89.4705748,25.8937759,locality, Lalmonirhat,Rangpur Division
+Patgram,89.0208507,26.3457861,locality, Lalmonirhat,Rangpur Division
+Dimla,88.9203155,26.1504889,locality, Nilphamari,Rangpur Division
+Domar,88.8191332,26.1054216,locality, Nilphamari,Rangpur Division
+Jaldhaka,89.0168246,26.019875,locality, Nilphamari,Rangpur Division
+Kishoreganj,89.0169223,25.899303,locality, Nilphamari,Rangpur Division
+Nilphamari Sadar,88.8534588,25.9339275,locality, Nilphamari,Rangpur Division
+Sayedpur,88.8836013,25.7752474,locality, Nilphamari,Rangpur Division
+Atwari,88.4122113,26.2766594,locality, Panchagarh,Rangpur Division
+Boda,88.6061171,26.2017653,locality, Panchagarh,Rangpur Division
+Debiganj,88.759245,26.1201935,locality, Panchagarh,Rangpur Division
+Panchagarh Sadar,88.5995034,26.3774432,locality, Panchagarh,Rangpur Division
+Tetulia,88.4203721,26.5213397,locality, Panchagarh,Rangpur Division
+Badarganj,89.058069,25.6720255,locality, Rangpur,Rangpur Division
+Gangachara,89.2203552,25.8530212,neighbourhood, Rangpur,Rangpur Division
+Kaunia,89.4190381,25.7733094,locality, Rangpur,Rangpur Division
+Mithapukur,89.2766893,25.5677701,venue, Rangpur,Rangpur Division
+Pirgacha,89.4058853,25.6583139,locality, Rangpur,Rangpur Division
+Pirganj,89.3164095,25.416289,locality, Rangpur,Rangpur Division
+Rangpur Sadar,89.4378013,25.911583,county, Rangpur,Rangpur Division
+Taraganj,89.0095498,25.8160548,region, Rangpur,Rangpur Division
+Baliadangi,88.2764013,26.0856143,locality, Thakurgaon,Rangpur Division
+Haripur,88.1297376,25.8313643,locality, Thakurgaon,Rangpur Division
+Pirganj,88.3617524,25.852289,locality, Thakurgaon,Rangpur Division
+Ranisankail,88.2543889,25.9015206,locality, Thakurgaon,Rangpur Division
+Thakurgaon Sadar,88.4762838,26.0296458,locality, Thakurgaon,Rangpur Division
+Ajmiriganj,91.2361655,24.5579044,locality, Habiganj,Sylhet Division
+Bahubal,91.5386282,24.338615,locality, Habiganj,Sylhet Division
+Baniachong,91.3626738,24.525917,locality, Habiganj,Sylhet Division
+Chunarughat,91.5202411,24.1973193,locality, Habiganj,Sylhet Division
+Habiganj Sadar,91.41299,24.38044,locality, Habiganj,Sylhet Division
+Lakhai,91.2506877,24.2847975,locality, Habiganj,Sylhet Division
+Madhabpur,91.288801,24.0957339,locality, Habiganj,Sylhet Division
+Nabiganj,91.5175418,24.5678894,locality, Habiganj,Sylhet Division
+Sayestaganj,91.41299,24.38044,locality, Habiganj,Sylhet Division
+Barlekha,92.1929218,24.7041949,county, Moulvibazar,Sylhet Division
+Juri,92.118766,24.5973097,county, Moulvibazar,Sylhet Division
+Kamalganj,91.8570806,24.3659437,county, Moulvibazar,Sylhet Division
+Kulaura,92.0340732,24.5226336,county, Moulvibazar,Sylhet Division
+Moulvibazar Sadar,90.0,24.0,county, Moulvibazar,
+Rajnagar,91.8722288,24.5228566,county, Moulvibazar,Sylhet Division
+Sreemangal,91.725133,24.3105781,county, Moulvibazar,Sylhet Division
+Biswamvarpur,91.41667,24.86667,locality, Sunamganj,Sylhet Division
+Chatak,91.41667,24.86667,locality, Sunamganj,Sylhet Division
+Dakshin Sunamganj,90.9854449,25.1054019,locality, Sunamganj,Sylhet Division
+Derai,91.3054863,24.7345993,locality, Sunamganj,Sylhet Division
+Dharmapasha,91.0087839,24.8961259,locality, Sunamganj,Sylhet Division
+Dowarabazar,91.5718305,25.0399047,locality, Sunamganj,Sylhet Division
+Jagannathpur,91.5570227,24.7819089,locality, Sunamganj,Sylhet Division
+Jamalganj,91.232135,24.9970512,locality, Sunamganj,Sylhet Division
+Sulla,91.41667,24.86667,locality, Sunamganj,Sylhet Division
+Sunamganj Sadar,91.41667,24.86667,locality, Sunamganj,Sylhet Division
+Tahirpur,91.1796957,25.0989152,locality, Sunamganj,Sylhet Division
+Balaganj,91.8414179,24.6578683,locality, Sylhet,Sylhet Division
+Beanibazar,92.1590067,24.8215475,locality, Sylhet,Sylhet Division
+Biswanath,91.7441956,24.8544584,locality, Sylhet,Sylhet Division
+Companiganj,90.9710495,23.6378777,locality, Sylhet,Chattogram Division
+Dakshin Surma,91.66667,24.5,venue, Sylhet,Sylhet Division
+Fenchuganj,91.9392229,24.6942465,locality, Sylhet,Sylhet Division
+Golapganj,92.0130004,24.8568815,locality, Sylhet,Sylhet Division
+Gowainghat,91.66667,24.5,locality, Sylhet,Sylhet Division
+Jointiapur,91.66667,24.5,, Sylhet,Sylhet Division
+Kanaighat,92.2559206,25.0072745,neighbourhood, Sylhet,Sylhet Division
+Osmaninagar,91.7448617,24.714181,locality, Sylhet,Sylhet Division
+Sylhet Sadar,91.9303414,24.9098988,locality, Sylhet,Sylhet Division
+Zakiganj,92.3695829,24.8765092,locality, Sylhet,Sylhet Division
+Gournadi,90.2309736,22.9751303,locality, Barishal,Barishal Division
+Doarabazar,91.41667,24.86667,, Sunamganj,Sylhet Division
+Adabar,90.3552923,23.7745693,locality, Dhaka,Dhaka Division
+Uttar Khan,90.437178,23.8814882,locality, Dhaka,Dhaka Division
+Uttara,90.3926893,23.8693275,locality, Dhaka,Dhaka Division
+Kadamtali,90.454595,23.6867705,locality, Dhaka,Dhaka Division
+Kalabagan,90.383938,23.7469583,locality, Dhaka,Dhaka Division
+Kafrul,90.3863131,23.7891719,locality, Dhaka,Dhaka Division
+Kamrangirchar,90.3770353,23.7177407,venue, Dhaka,Dhaka Division
+Cantonment,90.3986929,23.8047931,locality, Dhaka,Dhaka Division
+Kotwali,90.4223299,23.7214708,neighbourhood, Dhaka,Dhaka Division
+Khilkhet,90.4248321,23.8316678,locality, Dhaka,Dhaka Division
+Khilgaon,90.4232818,23.7506546,locality, Dhaka,Dhaka Division
+Gulshan,90.4155528,23.7921765,venue, Dhaka,Dhaka Division
+Gandaria,90.4263861,23.7060804,locality, Dhaka,Dhaka Division
+Chawkbazar,90.3954354,23.715323,venue, Dhaka,Dhaka Division
+Demra,90.4936705,23.7201033,locality, Dhaka,Dhaka Division
+Turag,90.3865746,23.7345339,locality, Dhaka,Dhaka Division
+Tejgaon,90.4021514,23.7625946,locality, Dhaka,Dhaka Division
+Tejgaon Industrial Area,90.4021514,23.7625946,locality, Dhaka,Dhaka Division
+Dakshinkhan,90.4273294,23.860592,locality, Dhaka,Dhaka Division
+Darus Salam,90.3549041,23.7780349,venue, Dhaka,Dhaka Division
+Dhanmondi,90.3745866,23.7479124,locality, Dhaka,Dhaka Division
+New Market,90.3828048,23.7333086,venue, Dhaka,Dhaka Division
+Paltan,90.4120882,23.7313082,locality, Dhaka,Dhaka Division
+Pallabi,90.3579782,23.8249938,locality, Dhaka,Dhaka Division
+Bangshal,90.4075241,23.7156511,locality, Dhaka,Dhaka Division
+Badda,90.4461484,23.7757969,locality, Dhaka,Dhaka Division
+Bimanbandar,90.3214912,22.7456747,locality, Dhaka,Barishal Division
+Motijheel,90.4211957,23.7272598,locality, Dhaka,Dhaka Division
+Mirpur,90.3640891,23.8123629,locality, Dhaka,Dhaka Division
+Mohammadpur,90.359824,23.7632722,locality, Dhaka,Dhaka Division
+Jatrabari,90.433806,23.7093978,locality, Dhaka,Dhaka Division
+Ramna,90.4022658,23.7398559,neighbourhood, Dhaka,Dhaka Division
+Rampura,90.4205675,23.7626126,locality, Dhaka,Dhaka Division
+Lalbagh,90.388234,23.7188384,locality, Dhaka,Dhaka Division
+Shah Ali,90.3571516,23.8119716,venue, Dhaka,Dhaka Division
+Shahbagh,90.41667,24.16667,venue, Dhaka,Dhaka Division
+Sher-e-Bangla Nagar,90.3754853,23.7741959,locality, Dhaka,Dhaka Division
+Shyampur,90.4395785,23.6888562,locality, Dhaka,Dhaka Division
+Sabujbagh,91.72142,24.3087747,locality, Dhaka,Sylhet Division
+Sutrapur,90.416873,23.7064485,locality, Dhaka,Dhaka Division
+Hazaribagh,90.368413,23.7319838,locality, Dhaka,Dhaka Division
+Banani,90.4076959,23.790321,locality, Dhaka,Dhaka Division
+Bhashantek,90.3895943,23.8121325,suburb, Dhaka,Dhaka Division
+Vatara,90.4448283,23.7997513,venue, Dhaka,Dhaka Division
+Mugda,90.4335651,23.7291223,venue, Dhaka,Dhaka Division
+Rupnagar,90.3547485,23.8152269,locality, Dhaka,Dhaka Division
+Wari,90.4153989,23.7186574,locality, Dhaka,Dhaka Division
+Bayejid Bostami,91.8104743,22.3896614,venue, Chittagong,Chattogram Division
+Bakalia,91.8784881,22.3459826,locality, Chittagong,Chattogram Division
+Chandgaon,91.8475717,22.3783243,locality, Chittagong,Chattogram Division
+Chittagong Bandar,91.7712021,22.3012243,locality, Chittagong,Chattogram Division
+Double Mooring,91.5,22.91667,neighbourhood, Chittagong,Chattogram Division
+Halishahar,91.7786019,22.2976897,locality, Chittagong,Chattogram Division
+Kotwali,91.8365976,22.3335183,locality, Chittagong,Chattogram Division
+Khulshi,91.7966938,22.3688486,locality, Chittagong,Chattogram Division
+Pahartali,91.9641449,22.4588459,locality, Chittagong,Chattogram Division
+Panchlaish,91.8343731,22.3967454,locality, Chittagong,Chattogram Division
+Patenga,91.7921425,22.2344096,locality, Chittagong,Chattogram Division
+Daulatpur,89.5269112,22.8694523,locality, Khulna,Khulna Division
+Khalishpur,89.5444099,22.8604213,locality, Khulna,Khulna Division
+Khan Jahan Ali,89.5067733,22.9142165,locality, Khulna,Khulna Division
+Kotwali,89.2137919,23.1655415,locality, Khulna,Khulna Division
+Sonadanga,89.5443618,22.8162694,locality, Khulna,Khulna Division
+Boalia,88.6042221,24.3650192,locality, Rajshahi,Rajshahi Division
+Matihar,88.69418,24.52457,locality, Rajshahi,Rajshahi Division
+Rajpara,89.0,25.0,locality, Rajshahi,Rajshahi Division
+Shah Makhdum,88.6142584,24.4382974,venue, Rajshahi,Rajshahi Division
