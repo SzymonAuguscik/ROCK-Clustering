@@ -1,10 +1,11 @@
 import os
 
+from . import utils
 from time import time
 from matplotlib import pyplot as plt
 from matplotlib import colors as mcolors
 from .structures import Point, Cluster, LocalHeap, GlobalHeap 
-from .utils import neighbour_estimation_function_1, closeness_l1, max_l1_distance
+
 from sklearn.metrics import silhouette_score, silhouette_samples, rand_score
 
 
@@ -14,16 +15,21 @@ class RockClustering:
                  K,
                  filename,
                  theta=0.5,
-                 neighbour_estimation_function=neighbour_estimation_function_1,
-                 similarity_function=closeness_l1,
-                 max_distance_function=max_l1_distance):
+                 neighbours='n1',
+                 distance='l1'):
         self.data = data
         self.K = K
         self._set_up_file_paths(filename)
         self.theta = theta
-        self.neighbour_estimation_function = neighbour_estimation_function
-        self.similarity_function = similarity_function
-        self.max_distance_function = max_distance_function
+        self.neighbour_estimation_function = {
+            'n1' : utils.neighbour_estimation_function_1,
+            'n2' : utils.neighbour_estimation_function_2,
+            'n3' : utils.neighbour_estimation_function_3,
+            'n4' : utils.neighbour_estimation_function_4,
+            'n5' : utils.neighbour_estimation_function_5
+        }[neighbours]
+        self.similarity_function = utils.closeness_l1 if distance == 'l1' else utils.closeness_l2
+        self.max_distance_function = utils.max_l1_distance if distance == 'l1' else utils.max_l1_distance
         self.scores = {}
         self.points = None
         self.outliers = None
