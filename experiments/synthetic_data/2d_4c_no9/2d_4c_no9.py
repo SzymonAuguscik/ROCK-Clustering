@@ -9,6 +9,6 @@ if __name__ == "__main__":
     df = pd.DataFrame(dataset[0])
     df['class'] = pd.factorize(df['class'])[0]
 
-    rock = RockClustering(df, len(np.unique(df['class'])), __file__, 0.75)
+    rock = RockClustering(df, len(np.unique(df['class'])), __file__, 0.95)
     rock.perform_clustering()
 

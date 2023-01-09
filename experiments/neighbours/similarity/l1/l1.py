@@ -1,14 +1,18 @@
+import geopandas as gpd
 import pandas as pd
 import numpy as np
 
-from scipy.io import arff
 from lib.RockClustering import RockClustering
 
 if __name__ == "__main__":
-    dataset = arff.loadarff('datasets/square5.arff')
-    df = pd.DataFrame(dataset[0])
-    df['class'] = pd.factorize(df['class'])[0]
+    gdf = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
-    rock = RockClustering(df, len(np.unique(df['class'])), __file__, 0.9, distance='l1')
+    gdf['geometry'] = gdf['geometry'].apply(lambda g: g.centroid)
+    gdf['x'] = gdf['geometry'].apply(lambda p: p.x)
+    gdf['y'] = gdf['geometry'].apply(lambda p: p.y)
+    gdf['continent'] = pd.factorize(gdf['continent'])[0]
+
+    gdf = gdf[['x', 'y', 'continent']]
+
+    rock = RockClustering(gdf, len(np.unique(gdf['continent'])), __file__, 0.92, distance='l1')
     rock.perform_clustering()
-

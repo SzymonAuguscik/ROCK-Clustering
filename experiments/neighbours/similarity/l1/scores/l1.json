@@ -1,1 +1,1 @@
-{'time_in_seconds': 1439.753, 'clustered_points_number': 1000, 'clustering_silhouette_score': -0.042, 'samples_silhouette_min_score': -0.552, 'samples_silhouette_max_score': 0.534, 'rand_index': 0.651}
+{'time_in_seconds': 6.454, 'clustered_points_number': 175, 'clustering_silhouette_score': 0.057, 'samples_silhouette_min_score': -0.611, 'samples_silhouette_max_score': 0.742, 'rand_index': 0.774}

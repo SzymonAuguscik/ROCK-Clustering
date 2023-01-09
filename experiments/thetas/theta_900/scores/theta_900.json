@@ -1,1 +1,0 @@
-{'time_in_seconds': 1472.405, 'clustered_points_number': 1000, 'clustering_silhouette_score': -0.042, 'samples_silhouette_min_score': -0.552, 'samples_silhouette_max_score': 0.534, 'rand_index': 0.651}
