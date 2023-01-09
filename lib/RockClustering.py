@@ -1,11 +1,11 @@
 import os
+import random
 
 from . import utils
 from time import time
 from matplotlib import pyplot as plt
 from matplotlib import colors as mcolors
 from .structures import Point, Cluster, LocalHeap, GlobalHeap 
-
 from sklearn.metrics import silhouette_score, silhouette_samples, rand_score
 
 
@@ -16,7 +16,8 @@ class RockClustering:
                  filename,
                  theta=0.5,
                  neighbours='n1',
-                 distance='l1'):
+                 distance='l2',
+                 dataset_part=1):
         self.data = data
         self.K = K
         self._set_up_file_paths(filename)
@@ -29,9 +30,11 @@ class RockClustering:
             'n5' : utils.neighbour_estimation_function_5
         }[neighbours]
         self.similarity_function = utils.closeness_l1 if distance == 'l1' else utils.closeness_l2
-        self.max_distance_function = utils.max_l1_distance if distance == 'l1' else utils.max_l1_distance
+        self.max_distance_function = utils.max_l1_distance if distance == 'l1' else utils.max_l2_distance
         self.scores = {}
-        self.points = None
+        self.dataset_part = dataset_part if dataset_part != 1 else None
+        self.points_under_clustering = None
+        self.remaining_points = None
         self.outliers = None
         self.neighbours = None
         self.links = None
@@ -58,12 +61,21 @@ class RockClustering:
 
     def _get_neighbours(self):
         max_distance = self.max_distance_function(self.data)
-        return {p1 : set([p2 for p2 in self.points if p2 != p1 and self.similarity_function(p1, p2, max_distance) >= self.theta]) for p1 in self.points}
+        return {p1 : set([p2 for p2 in self.points_under_clustering if p2 != p1 and self.similarity_function(p1, p2, max_distance) >= self.theta]) for p1 in self.points_under_clustering}
 
     def _extract_outliers(self):
-        outliers = [point for point in self.points if len(self.neighbours[point]) == 0]
-        self.points = [point for point in self.points if len(self.neighbours[point]) > 0]
+        outliers = [point for point in self.points_under_clustering if len(self.neighbours[point]) == 0]
+        self.points_under_clustering = [point for point in self.points_under_clustering if len(self.neighbours[point]) > 0]
         return outliers
+
+    def _extract_remaining_points(self):
+        k = int(len(self.points_under_clustering) * (1 - self.dataset_part))
+        remaining_points = random.sample(self.points_under_clustering, k)
+        
+        for point in remaining_points:
+            self.points_under_clustering.remove(point)
+
+        return remaining_points
 
     def _get_points_link(self, point1, point2):
         if point1 == point2:
@@ -77,14 +89,14 @@ class RockClustering:
     def _compute_links(self):
         links = {}
 
-        for i, point1 in enumerate(self.points):
-            for point2 in self.points[i + 1:]:
+        for i, point1 in enumerate(self.points_under_clustering):
+            for point2 in self.points_under_clustering[i + 1:]:
                 links[tuple(sorted([point1.id, point2.id]))] = self._get_points_link(point1, point2)
 
         return links
 
     def _get_initial_clusters(self):
-        return [Cluster([point]) for point in self.points]
+        return [Cluster([point]) for point in self.points_under_clustering]
 
     def _get_clusters_link(self, cluster1, cluster2):
         return sum([self._get_points_link(p1, p2) for p1 in cluster1.points for p2 in cluster2.points])
@@ -118,25 +130,69 @@ class RockClustering:
         self.local_heaps[:] = (heap for heap in self.local_heaps if heap.cluster != cluster)
         self.clusters[:] = (c for c in self.clusters if c != cluster)
 
-    def _add_cluster(self, cluster):
-        self.clusters.append(cluster)
+    def _get_true_classes(self):
+        return [point.true_class for point in sorted(self.points_under_clustering + self.outliers,
+                                                     key=lambda p: p.id)]
+
+    def _get_predicted_classes(self):
+        return [point.predicted_class for point in sorted(self.points_under_clustering + self.outliers,
+                                                          key=lambda p: p.id)]
+
+    def _get_partial_goodness_measure(self, neighbourins_count, cluster_count):
+        return neighbourins_count / (cluster_count + 1)**self.neighbour_estimation_function(self.theta)
+
+    def _cluster_remaining_points(self):
+        self.remaining_points = sorted(self.remaining_points,
+                                       reverse=False,
+                                       key=lambda point: len(set(self.neighbours[point]) & set(self.points_under_clustering)))
+
+        for point in self.remaining_points:
+            print(f"{point} : {len(set(self.neighbours[point]) & set(self.points_under_clustering))}")
+
+        while len(self.remaining_points):
+            print(len(self.remaining_points))
+            point = self.remaining_points.pop()
+            point_neighbours = self.neighbours[point]
+            self.points_under_clustering.append(point)
+            
+            if len(set(point_neighbours) & set(self.points_under_clustering)) == 0:
+                continue
+            
+            neighbouring_clusters = { cluster : neighbours for cluster, neighbours in
+                                    { c : [point for point in c.points if point in point_neighbours] for c in self.Q.clusters }.items()
+                                      if len(neighbours)}
+
+            if not neighbouring_clusters:
+                continue
+
+            best_cluster = max(neighbouring_clusters,
+                               key=lambda c: self._get_partial_goodness_measure(len(point_neighbours),
+                                                                                len(neighbouring_clusters[c])))
+            best_cluster.points.append(point)
+
+        self.points_under_clustering = sorted(self.points_under_clustering, key=lambda p: p.id)
 
     def perform_clustering(self):
         t1 = time()
         print("Start!")
-        self.points = self._get_points()
-        print("self.points")
+        print(f"Clusters to be set: {self.K}")
+        self.points_under_clustering = self._get_points()
+        print("Points")
         self.neighbours = self._get_neighbours()
         self.outliers = self._extract_outliers()
-        print("self.neighbours")
+        print("Neighbours")
+
+        if self.dataset_part:
+            self.remaining_points = self._extract_remaining_points()
+
         self.links = self._compute_links()
-        print("self.links")
+        print("Links")
         self.clusters = self._get_initial_clusters()
-        print("self.clusters")
+        print("Clusters")
         self.local_heaps = self._create_local_heaps()
-        print("self.local_heaps")
+        print("Local heaps")
         self.Q = self._create_global_heap()
-        print("self.Q")
+        print("Q")
 
         self.draw_raw_points()
 
@@ -151,7 +207,7 @@ class RockClustering:
                 continue
 
             w = Cluster(list(set(u.points) | set(v.points)))
-            self._add_cluster(w)
+            self.clusters.append(w)
 
             qw = LocalHeap(w, [], self._get_goodness_measure)
             qv = self._get_local_heap_for_cluster(v)
@@ -175,20 +231,22 @@ class RockClustering:
             self.local_heaps.append(qw)
             self.Q.insert(w, self.local_heaps, update_clusters)
 
+        if self.dataset_part:
+            self._cluster_remaining_points()
+
         for i, cluster in enumerate(self.Q.clusters):
             for point in cluster.points:
                 point.predicted_class = i
 
         t2 = time() - t1
         self.scores["time_in_seconds"] = round(t2, 3)
-        self.save_scores()
+        self._save_scores()
         self.draw_clustered_points()
+        print("End!")
 
-    def save_scores(self):
-        true_classes = [point.true_class for point in sorted(self.points + self.outliers,
-                                                             key=lambda p: p.id)]
-        predicted_classes = [point.predicted_class for point in sorted(self.points + self.outliers,
-                                                                       key=lambda p: p.id)]
+    def _save_scores(self):
+        true_classes = self._get_true_classes()
+        predicted_classes = self._get_predicted_classes()
 
         samples_silhouette_score = silhouette_samples(self.data.iloc[:, :-1], predicted_classes)
         rand_index = rand_score(true_classes, predicted_classes)
